@@ -1,0 +1,50 @@
+<?php get_header()?>
+<?php $images_offer_icon_dir = get_template_directory_uri() . '/assets/images/offer-icon'?>
+<?php 
+    $primary_image = get_field("zdjecie_glowne");
+    $secondary_image = get_field("zdjecie_drugorzedne");
+    $tetriarity_image1 = get_field("zdjecie_trzeciorzedne_1");
+    $tetriarity_image2 = get_field("zdjecie_trzeciorzedne_2");
+    ?>
+<div class="baner-section">
+    <div class="baner-left-section" >
+        <img src="<?php echo $primary_image?>" alt="Primary img">
+    </div>
+    <div class="baner-right-section">
+        <div class="wide-block">
+            <img src="<?php echo $secondary_image?>" alt="secondary img">
+        </div>
+        <div class="narrow-block-section">
+            <div class="narrow-block first-narrow-block">
+                <img src="<?php echo $tetriarity_image1 ?>" alt="tetriary img 1">
+            </div>
+            <div class="narrow-block second-narrow-block">
+                 <img src="<?php echo $tetriarity_image2 ?>" alt="tetriary img 2">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="offers">
+    <div class="delivery offer">
+        <img class="icon" src="<?php echo $images_offer_icon_dir . '/delivery.png'?>" alt="delivery">
+        <b>Fast Free Shipping</b>
+        <p>Around The World</p>
+    </div>
+    <div class="support offer">
+        <img class="icon" src="<?php echo $images_offer_icon_dir . '/support.png'?>" alt="support">
+        <b>24/7 Support</b>
+        <p>Contact Us 24 Hours</p>
+    </div>
+    <div class="bank offer">
+        <img class="icon" src="<?php echo $images_offer_icon_dir . '/piggy-bank.png'?>" alt="piggy-bank">  
+        <b>Easy Money Back</b>
+        <p>Gurantee of Money Reurn</p>
+    </div>
+    <div class="rocket offer">
+        <img class="icon" src="<?php echo $images_offer_icon_dir . '/startup.png'?>" alt="startup">  
+        <b>Store Search</b>
+        <p>Quick Store Search</p>
+    </div>
+</div>
+<div class="line"></div>
+<?php get_footer()?>

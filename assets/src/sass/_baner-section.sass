@@ -1,0 +1,51 @@
+.baner-section
+    margin-top: 30px
+    display: flex
+    justify-content: space-around
+    width: 60vw
+    width: 1200px
+    height: 600px
+    .baner-left-section
+        width: 575px
+        height: 100%
+        position: relative
+        img 
+            width: 100%
+            +background-img-element()
+    .baner-right-section
+        display: flex
+        align-items: space-between
+        width: 550px
+        height: 100%
+        flex-wrap: wrap
+        .wide-block
+            width: 550px
+            height: 50%
+            overflow: hidden
+            position: relative
+            img 
+                width: 100%
+                +background-img-element()
+        .wide-block:hover img
+            width: 120%
+        .narrow-block-section
+            display: flex
+            justify-content: space-between
+            .narrow-block
+                margin-right: 10px
+                width: 270px
+                height: 270px
+            .narrow-block:hover img
+                width: 120%
+            .first-narrow-block
+                overflow: hidden
+                position: relative
+                img
+                    width: 100%
+                    +background-img-element()
+            .second-narrow-block
+                overflow: hidden
+                position: relative
+                img
+                    width: 100%
+                    +background-img-element()
