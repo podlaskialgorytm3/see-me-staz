@@ -35,36 +35,92 @@
         </div>
     </header>
     <div class="nav-menu">
-    <div class="burger-menu">
-        <img src="<?php echo get_template_directory_uri()."/assets/images/burger-menu.png" ?>" alt="Burger Menu" class="burger-menu-icon icon burger-items">
-        <p class="burger-menu-text burger-items bold">Menu</p>
-        <div class="burger-main-menu">
-            <span class="x"><img class="icon" src="<?php echo get_template_directory_uri()."/assets/images/x.png" ?>" alt=""></span>
-            <ul>
-                <li>Home</li>
-                <li>Shop <img src="<?php echo get_template_directory_uri()."/assets/images/plus.png" ?>" class="shop-icon plus" alt="">
-                    <ul class="shop-list">
+        <div class="burger-menu">
+            <img src="<?php echo get_template_directory_uri()."/assets/images/burger-menu.png" ?>" alt="Burger Menu" class="burger-menu-icon icon burger-items">
+            <p class="burger-menu-text burger-items bold">Menu</p>
+            <div class="burger-main-menu">
+                <span class="x"><img class="icon" src="<?php echo get_template_directory_uri()."/assets/images/x.png" ?>" alt=""></span>
+                <ul>
+                    <li>Home</li>
+                    <li>Shop <img src="<?php echo get_template_directory_uri()."/assets/images/plus.png" ?>" class="shop-icon plus" alt="">
+                        <ul class="shop-list">
+                            <li>Product Category</li>
+                            <li>Top rated produckt</li>
+                        </ul>
+                    </li>
+                    <li>Blog <img src="<?php echo get_template_directory_uri()."/assets/images/plus.png" ?>" class="blog-icon plus" alt="">
+                        <ul class="blog-list">
+                            <li>Left Sidebar</li>
+                            <li>Right Sidebar</li>
+                            <li>Full Width</li>
+                        </ul>
+                    </li>
+                    <li>Media <img src="<?php echo get_template_directory_uri()."/assets/images/plus.png" ?>" class="media-icon plus" alt="">
+                        <ul class="media-list">
+                            <li><p class="bold">Gallery</p></li>
+                            <li>2 Columns</li>
+                            <li>3 Columns</li>
+                            <li>4 columns</li>
+                        </ul>
+                    </li>
+                    <li>Shortcode <img src="<?php echo get_template_directory_uri()."/assets/images/plus.png" ?>" class="shortcode-icon plus" alt="">
+                        <ul class="shortcode-list">
+                            <li><p class="bold">Shortcode Pages</p></li>
+                            <li>Accordions & Toggles</li>
+                            <li>Buttons</li>
+                            <li>Divder</li>
+                            <li>Lists</li>
+                            <li>Map & Contact</li>
+                        </ul>
+                    </li>
+                    <li>Pages <img src="<?php echo get_template_directory_uri()."/assets/images/plus.png" ?>" class="pages-icon plus" alt="">
+                        <ul class="pages-list">
+                            <li>FAQs</li>
+                            <li>Sitemap</li>
+                            <li>Typography</li>
+                        </ul>
+                    </li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </div>
+        <h1></h1>
+           <?php 
+                wp_nav_menu(
+                    array(
+                        'menu' => 'main',
+                        'container' => 'nav',
+                        'theme_location' => 'main',
+                        // 'items_wrap' => '<ul id="" class="navbar-nav flex-column text-sm-center text-md-left">%3$s</ul>'
+                    )
+                );
+			?>
+            <!-- <ul>
+                <li>Strona glowna</li>
+                <li>Sklep
+                    <ul>
                         <li>Product Category</li>
                         <li>Top rated produckt</li>
                     </ul>
                 </li>
-                <li>Blog <img src="<?php echo get_template_directory_uri()."/assets/images/plus.png" ?>" class="blog-icon plus" alt="">
-                    <ul class="blog-list">
+                <li>Blog
+                    <ul>
                         <li>Left Sidebar</li>
                         <li>Right Sidebar</li>
                         <li>Full Width</li>
                     </ul>
                 </li>
-                <li>Media <img src="<?php echo get_template_directory_uri()."/assets/images/plus.png" ?>" class="media-icon plus" alt="">
-                    <ul class="media-list">
+                <li>Media
+                    <ul>
                         <li><p class="bold">Gallery</p></li>
                         <li>2 Columns</li>
                         <li>3 Columns</li>
                         <li>4 columns</li>
                     </ul>
                 </li>
-                <li>Shortcode <img src="<?php echo get_template_directory_uri()."/assets/images/plus.png" ?>" class="shortcode-icon plus" alt="">
-                    <ul class="shortcode-list">
+                <li>Shortcode
+                    <ul>
                         <li><p class="bold">Shortcode Pages</p></li>
                         <li>Accordions & Toggles</li>
                         <li>Buttons</li>
@@ -73,8 +129,8 @@
                         <li>Map & Contact</li>
                     </ul>
                 </li>
-                <li>Pages <img src="<?php echo get_template_directory_uri()."/assets/images/plus.png" ?>" class="pages-icon plus" alt="">
-                    <ul class="pages-list">
+                <li>Pages
+                    <ul>
                         <li>FAQs</li>
                         <li>Sitemap</li>
                         <li>Typography</li>
@@ -82,52 +138,5 @@
                 </li>
                 <li>About Us</li>
                 <li>Contact Us</li>
-            </ul>
-        </div>
+            </ul> -->
     </div>
-    <nav class="menu">
-        <ul>
-            <li>Strona glowna</li>
-            <li>Sklep
-                <ul>
-                    <li>Product Category</li>
-                    <li>Top rated produckt</li>
-                </ul>
-            </li>
-            <li>Blog
-                <ul>
-                    <li>Left Sidebar</li>
-                    <li>Right Sidebar</li>
-                    <li>Full Width</li>
-                </ul>
-            </li>
-            <li>Media
-                <ul>
-                    <li><p class="bold">Gallery</p></li>
-                    <li>2 Columns</li>
-                    <li>3 Columns</li>
-                    <li>4 columns</li>
-                </ul>
-            </li>
-            <li>Shortcode
-                <ul>
-                    <li><p class="bold">Shortcode Pages</p></li>
-                    <li>Accordions & Toggles</li>
-                    <li>Buttons</li>
-                    <li>Divder</li>
-                    <li>Lists</li>
-                    <li>Map & Contact</li>
-                </ul>
-            </li>
-            <li>Pages
-                <ul>
-                    <li>FAQs</li>
-                    <li>Sitemap</li>
-                    <li>Typography</li>
-                </ul>
-            </li>
-            <li>About Us</li>
-            <li>Contact Us</li>
-        </ul>
-    </nav>
-</div>

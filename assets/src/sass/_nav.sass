@@ -8,34 +8,40 @@ nav
     width: 1000px
     ul
         display: flex
-        justify-content: space-between
+        justify-content: center
         li  
             list-style-type: none
             font-size: 18px
             font-weight: bold
             border-left: 1px solid #cdcdcd
-            padding-left: 30px
             position: relative
+            padding:10px
             display: flex
             cursor: pointer
+            a
+                color:#0000ee
+                padding: 0 20px
+                text-decoration: none
             ul
                 display: none
                 flex-direction: column
-                width: 300px
+                justify-content: center
+                width: 100%
                 background-color: white
                 box-shadow: -2px -3px 27px 9px #d2d3d990
                 position: absolute
-                top: 28px
-                left: -45px
+                margin:0
+                padding:0
+                top: 40px
+                left: 0px
                 z-index: 1
                 li
                     border: transparent
-                    margin: 10px
                     font-size: 18px
-                    font-weight: 500
                     color: gray
-                    padding: 0
-                li:hover
+                    a
+                        font-weight: 500
+                li:hover a
                     color: $hover__color
         li:first-child
             border-left: transparent

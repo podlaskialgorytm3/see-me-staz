@@ -25,3 +25,12 @@ function zosia_register_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'zosia_register_scripts');
+
+function zosia_menus(){
+    $locations = array(
+        'main' => 'Main menu',
+    );
+    register_nav_menus($locations);
+}
+
+add_action('init','zosia_menus');
