@@ -87,8 +87,8 @@
     </div>
     <nav class="menu">
         <ul>
-            <li>Home</li>
-            <li>Shop
+            <li>Strona glowna</li>
+            <li>Sklep
                 <ul>
                     <li>Product Category</li>
                     <li>Top rated produckt</li>
