@@ -24,19 +24,8 @@
         ?>
         <div class="shop-menu">
             <div class="left-shop-menu">
-            <?php 
-                wp_nav_menu(
-                    array(
-                        'menu' => 'header_menu',
-                        'container' => 'header',
-                        'theme_location' => 'main',
-                        // 'items_wrap' => '<ul id="" class="navbar-nav flex-column text-sm-center text-md-left">%3$s</ul>'
-                    )
-                );
-			?>
-            <a href="localhost/wordpress/my-account"><p class="mini-text">My Account </br><b>Signup</b> & <b>Login</b></p></a>
-                <!-- <a href="#"><img class="icon" src=" <?php  // echo $images_icon_dir . '/person.png'?>" alt="person"></a>
-                 -->
+            <a href="<?php echo get_permalink()."/my-account" ?>"><img class="icon" src=" <?php  echo $images_icon_dir . '/person.png'?>" alt="person"></a>
+            <a href="<?php echo get_permalink()."/my-account" ?>"><p class="mini-text">My Account </br><b>Signup</b> & <b>Login</b></p></a>
             </div>
             <div class="center-shop-menu"></div>
             <div class="right-shop-menu">
