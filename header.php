@@ -45,50 +45,7 @@
                         'menu' => 'main',
                         'container' => 'nav',
                         'theme_location' => 'main',
-                        // 'items_wrap' => '<ul id="" class="navbar-nav flex-column text-sm-center text-md-left">%3$s</ul>'
                     )
                 );
 			?>
-            <!-- <ul>
-                <li>Strona glowna</li>
-                <li>Sklep
-                    <ul>
-                        <li>Product Category</li>
-                        <li>Top rated produckt</li>
-                    </ul>
-                </li>
-                <li>Blog
-                    <ul>
-                        <li>Left Sidebar</li>
-                        <li>Right Sidebar</li>
-                        <li>Full Width</li>
-                    </ul>
-                </li>
-                <li>Media
-                    <ul>
-                        <li><p class="bold">Gallery</p></li>
-                        <li>2 Columns</li>
-                        <li>3 Columns</li>
-                        <li>4 columns</li>
-                    </ul>
-                </li>
-                <li>Shortcode
-                    <ul>
-                        <li><p class="bold">Shortcode Pages</p></li>
-                        <li>Accordions & Toggles</li>
-                        <li>Buttons</li>
-                        <li>Divder</li>
-                        <li>Lists</li>
-                        <li>Map & Contact</li>
-                    </ul>
-                </li>
-                <li>Pages
-                    <ul>
-                        <li>FAQs</li>
-                        <li>Sitemap</li>
-                        <li>Typography</li>
-                    </ul>
-                </li>
-                <li>About Us</li>
-                <li>Contact Us</li>
-            </ul> -->
+  
