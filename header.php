@@ -24,13 +24,13 @@
         ?>
         <div class="shop-menu">
             <div class="left-shop-menu">
-                <img class="icon" src="<?php echo $images_icon_dir . '/person.png'?>" alt="person">
-                <p class="mini-text">My Account </br><b>Signup</b> & <b>Login</b></p>
+                <a href="#"><img class="icon" src="<?php echo $images_icon_dir . '/person.png'?>" alt="person"></a>
+                <a href="#"><p class="mini-text">My Account </br><b>Signup</b> & <b>Login</b></p></a>
             </div>
             <div class="center-shop-menu"></div>
             <div class="right-shop-menu">
-                <img class="icon" src="<?php echo $images_icon_dir . '/heart.png'?>" alt="hearth">
-                <img class="icon" src="<?php echo $images_icon_dir . '/shop-bag.png'?>" alt="shop-bag">
+                <a href="#"><img class="icon" src="<?php echo $images_icon_dir . '/heart.png'?>" alt="hearth"></a>
+                <a href="#"><img class="icon" src="<?php echo $images_icon_dir . '/shop-bag.png'?>" alt="shop-bag"></a>
             </div>
         </div>
     </header>
