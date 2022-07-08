@@ -1,11 +1,9 @@
-div.nav-menu
-    width: 100vw
+nav
     border-top: 1px solid #cdcdcd
     border-bottom: 1px solid #cdcdcd
     display: flex
     justify-content: center
-nav
-    width: 1000px
+    width: 100vw
     ul
         display: flex
         justify-content: center
@@ -18,10 +16,12 @@ nav
             position: relative
             padding:10px
             display: flex
+            flex-direction: column
             cursor: pointer
             a
-                color:#0000ee
+                color:#000000
                 padding: 0 20px
+                width: 100%
                 text-decoration: none
             ul
                 display: none
@@ -36,7 +36,7 @@ nav
                 padding:0
                 top: 100%
                 left: 0px
-                z-index: 1
+                z-index: 3
                 li
                     border: transparent
                     font-size: 18px
@@ -49,17 +49,9 @@ nav
             border-left: transparent
         li:hover > ul
             display: flex
-.burger-menu
-    display: none
-    position: absolute
-    z-index: 1
-    .burger-menu-text
-        margin-right: 30px
-    .burger-menu-icon
-        margin-left: 30px
+
 @media(max-width: 1200px)
     nav
-        width: 800px
         ul
             li
                 font-size: 17px
@@ -67,51 +59,62 @@ nav
                     width: 200px
                     li
                         font-size: 16px
-@media(max-width: 800px)
-    .nav-menu
-        width: 100vw
-        height: 5vh
-        nav
-            display: none
-    .burger-menu
-        display: flex
-        width: 100vw
-        justify-content: space-between
-        align-items: center
-        .burger-main-menu
-            position: absolute
-            top: 0px
-            left: -300px
-            width: 300px
-            height: 800px
-            background-color: white
-            transition: 1s
-            ul
-                list-style-type: none
-                margin-top: 40px
-                li
-                    font-size: 16px
-                    font-weight: bold
-                    width: 80%
-                    margin-bottom: 10px
-                    padding: 10px
-                    border-bottom: 1px solid #cdcdcd
-                    ul
-                        display: none
-                        margin: 0px
-                        padding: 0px
-                        margin-bottom: 30px
-                        li
-                            margin: 0px
-            .x
-                position: absolute
-                top: 10px
-                right: 10px
-            .plus
-                width: 15px
-                height: 15px
-                position: absolute
-                right: 30px
-@media(orientation: portrait)
-    div.nav-menu
-        width: 100vh
+
+
+@media (max-width: 800px)
+    nav
+        width: 300px
+        height: 100vh
+        position: fixed
+        top:0
+        left:0
+        overflow: hidden
+        background-color:#fff
+        z-index: 55
+        ul
+            margin:0
+            width: 100%
+            
+            padding:50px 0
+            display: flex
+            z-index: 0
+            flex-direction: column
+            justify-content: flex-start
+            li
+                width:100%
+                border-left: none
+                border-bottom: 1px solid #cdcdcd
+                position: relative
+                z-index: 0
+                flex-direction: column
+                &::after
+                    position: absolute
+                    top:0px
+                    right: 30px
+                    content:'+'
+                    font-size: 1.5rem
+                    z-index: 2313215
+                &::after:hover
+                    background-color: #000
+                &:hover  ul
+                    display: flex                    
+                ul
+                    display: flex
+                    box-shadow: none
+                    position: static
+                    top:auto
+                    width:300px
+                    left:auto
+                    li
+                        padding: 10px 30px
+                        border-bottom: 1px solid #cdcdcd
+                        a
+                            font-weight: 600
+                        &:last-child
+                            border-bottom: none
+
+                        
+
+                
+                    
+                
