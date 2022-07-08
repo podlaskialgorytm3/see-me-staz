@@ -34,6 +34,11 @@
             </div>
         </div>
     </header>
+            <div class="hamburger-icon">
+                <div class="hamburger-icon__bar"></div>
+                <div class="hamburger-icon__bar"></div>
+                <div class="hamburger-icon__bar"></div>
+            </div>
            <?php 
                 wp_nav_menu(
                     array(

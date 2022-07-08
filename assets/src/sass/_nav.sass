@@ -65,41 +65,40 @@ nav
     nav
         width: 300px
         height: 100vh
+        display: flex
         position: fixed
         top:0
         left:0
         overflow: hidden
         background-color:#fff
-        z-index: 55
+        z-index: 2
+        transform: translateX(-200%)
+        transition: .5s
+    nav.opened
+        transform: translateX(0)
         ul
             margin:0
             width: 100%
-            
             padding:50px 0
             display: flex
             z-index: 0
             flex-direction: column
             justify-content: flex-start
             li
+                padding: 0
                 width:100%
                 border-left: none
                 border-bottom: 1px solid #cdcdcd
                 position: relative
                 z-index: 0
                 flex-direction: column
-                &::after
-                    position: absolute
-                    top:0px
-                    right: 30px
-                    content:'+'
-                    font-size: 1.5rem
-                    z-index: 2313215
-                &::after:hover
-                    background-color: #000
+                a
+                    padding: 10px 20px
                 &:hover  ul
                     display: flex                    
                 ul
                     display: flex
+                    padding: 0
                     box-shadow: none
                     position: static
                     top:auto
@@ -110,11 +109,36 @@ nav
                         border-bottom: 1px solid #cdcdcd
                         a
                             font-weight: 600
+                            padding: 10px
                         &:last-child
                             border-bottom: none
 
-                        
+.hamburger-icon
+    width: 42px
+    height: 40px
+    position: fixed
+    top: 5px
+    left: 10px
+    z-index: 5
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    cursor: pointer
+    padding: 10px
+    &__bar
+        transform-origin:0 50%
+        display: block
+        width: 42px
+        border-radius: 3px
+        height: 6px
+        background-color: #000
+        transition:.3s
 
-                
-                    
-                
+        &--clicked:nth-child(1)
+            transform: rotate(44.3deg)
+    
+        &--clicked:nth-child(2)
+            transform: translateX(-100%)
+            opacity: 0
+        &--clicked:nth-child(3)
+            transform: rotate(-42deg)
