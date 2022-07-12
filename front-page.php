@@ -1,10 +1,7 @@
 <?php get_header()?>
 <?php $images_offer_icon_dir = get_template_directory_uri() . '/assets/images/offer-icon'?>
 <?php 
-    $primary_image = get_field("zdjecie_glowne");
-    $secondary_image = get_field("zdjecie_drugorzedne");
-    $tetriarity_image1 = get_field("zdjecie_trzeciorzedne_1");
-    $tetriarity_image2 = get_field("zdjecie_trzeciorzedne_2");
+    
     ?>
 <div class="baner-section">
     <div class="baner-left-section" >
