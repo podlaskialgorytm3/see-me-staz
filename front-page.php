@@ -64,4 +64,27 @@
         wp_reset_query();
     ?>
 </div>
+<h1>Categories</h1>
+<div class="categories">
+<?php 
+    $product_categories = get_terms( 'product_cat', 'hide_empty=0' );
+    if ( ! empty( $product_categories ) && ! is_wp_error( $product_categories ) ) {
+        foreach ( $product_categories as $category ) {
+            ?>
+            <div class="category">
+                <h4><a href="<?php echo esc_url( get_term_link( $category ) ); ?>"><?php echo esc_html( $category->name ); ?></a></h4>
+                <?php
+                $thumbnail_id = get_term_meta( $category->term_id, 'thumbnail_id', true );
+                $image = wp_get_attachment_url( $thumbnail_id );
+                ?>
+                <?php if ( $image ) : ?>
+                    <img src="<?php echo esc_url( $image ); ?>" alt="" />
+                <?php endif; ?>
+            </div>
+            <?php
+        }
+    }
+
+?>
+</div>
 <?php get_footer()?>
