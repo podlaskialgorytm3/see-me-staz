@@ -1,5 +1,4 @@
 <?php $images_icon_dir = get_template_directory_uri() . '/assets/images'?>
-<?php $burger_menu= get_field("burger_menu") ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

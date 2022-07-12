@@ -47,4 +47,21 @@
     </div>
 </div>
 <div class="line"></div>
+<h1>Trending Products</h1>
+<div class="products">
+    <?php 
+        $args = array(
+            'post_type'      => 'product',
+            'posts_per_page' => 5,
+        );
+
+        $loop = new WP_Query( $args );
+        while ( $loop->have_posts() ){
+            $loop->the_post();
+            get_template_part("template-parts/product");
+        }
+
+        wp_reset_query();
+    ?>
+</div>
 <?php get_footer()?>
