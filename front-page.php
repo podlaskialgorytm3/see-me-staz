@@ -13,10 +13,15 @@
     <div class="baner-right-section">
         <div class="wide-block">
             <img src="<?php echo $secondary_image?>" alt="secondary img">
+            <h2 class="pierwszyh2">Flat 50%</h2>
+            <h2 class="drugih2">Buy Plant Pots</h2>
+            <h2 class="trzecih2">Online</h2>
+            <a class="BShop" href="#" role="button">Shop now</a>
         </div>
         <div class="narrow-block-section">
             <div class="narrow-block first-narrow-block">
                 <img src="<?php echo $tetriarity_image1 ?>" alt="tetriary img 1">
+                <div class="ButtonCrafter"><a class="BCrafter" href="#" role="button">Crafter Items</a></div>
             </div>
             <div class="narrow-block second-narrow-block">
                  <img src="<?php echo $tetriarity_image2 ?>" alt="tetriary img 2">
