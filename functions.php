@@ -11,7 +11,7 @@ function zosia_register_styles()
 {
     $version = wp_get_theme()->get('Version');
     wp_enqueue_style('zosia-style', get_template_directory_uri() . '/style.css', null , $version, 'all');
-    wp_enqueue_style('zosia-main-style', get_template_directory_uri() . '/assets/src/sass/main.css', null, time(), 'all');
+    wp_enqueue_style('zosia-main-style', get_template_directory_uri() . '/assets/dist/main.css', null, time(), 'all');
     wp_enqueue_style('zosia-fonts', 'https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap', null, $version, 'all');
 
 }
