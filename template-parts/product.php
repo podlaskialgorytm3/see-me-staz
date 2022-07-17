@@ -1,9 +1,9 @@
-<div class="product">
+<?php $link = get_permalink($post->ID); ?>
+<a class="product" href="<?php echo $link?>">
   <div class="imageproduct">
     
     <img src="<?php ?>"/>
     <?php echo get_the_post_thumbnail($post->ID, 'yourTable'); ?>
-    
 
   </div>
   
@@ -18,4 +18,4 @@
     </div>
     
   </div>
-</div>
+</a>

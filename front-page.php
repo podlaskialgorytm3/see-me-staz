@@ -1,5 +1,7 @@
 <?php get_header()?>
-<?php $images_offer_icon_dir = get_template_directory_uri() . '/assets/images/offer-icon'?>
+<?php $images_offer_icon_dir = get_template_directory_uri() . '/assets/images/offer-icon';
+      $images_dir = get_template_directory_uri() . '/assets/images';
+?>
 <?php 
     $primary_image = get_field("zdjecie_glowne");
     $secondary_image = get_field("zdjecie_drugorzedne");
@@ -69,6 +71,7 @@
         wp_reset_query();
     ?>
 </div>
+<div class="line"></div>
 <h1>Shop by Categories</h1>
 <div class="categories">
 <?php
@@ -79,7 +82,7 @@
             if($counter == 6) break;
             $counter++
             ?>
-            <?php if($category->name != "Uncategorized"): ?>
+            <?php if($category->name != "Uncategorized" && $category->name != "Bez kategorii"): ?>
                 <div class="category">
                     <?php
                     $thumbnail_id = get_term_meta( $category->term_id, 'thumbnail_id', true );
@@ -96,5 +99,26 @@
     }
 
 ?>
+</div>
+<div class="line"></div>
+<div class="certificates">
+    <div class="certificate">
+        <img class="certificate__img" src="<?php echo $images_dir . '/brand-1.png'?>"/>
+    </div>
+    <div class="certificate">
+        <img class="certificate__img" src="<?php echo $images_dir . '/brand-2.png'?>"/>
+    </div>
+    <div class="certificate">
+        <img class="certificate__img" src="<?php echo $images_dir . '/brand-3.png'?>"/>
+    </div>
+    <div class="certificate">
+        <img class="certificate__img" src="<?php echo $images_dir . '/brand-4.png'?>"/>
+    </div>
+    <div class="certificate">
+        <img class="certificate__img" src="<?php echo $images_dir . '/brand-5.png'?>"/>
+    </div>
+    <div class="certificate">
+        <img class="certificate__img" src="<?php echo $images_dir . '/brand-6.png'?>"/>
+    </div>
 </div>
 <?php get_footer()?>
